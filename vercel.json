@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "functions": {
-    "app.py": {
-      "runtime": "python3.9",
-      "maxDuration": 30
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/static/(.*)",
@@ -15,8 +15,5 @@
       "src": "/(.*)",
       "dest": "/app.py"
     }
-  ],
-  "env": {
-    "PYTHONPATH": "./"
-  }
+  ]
 } 
