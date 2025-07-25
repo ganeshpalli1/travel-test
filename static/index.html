@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Digital Nomad Travel Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-globe-americas"></i> Travel Assistant</h1>
+                <p>Your excited AI travel buddy for digital nomads! 🚀</p>
+            </div>
+            <div class="status" id="status">
+                <i class="fas fa-circle online"></i> Online
+            </div>
+        </header>
+
+        <!-- Chat Container -->
+        <div class="chat-container" id="chatContainer">
+            <!-- Welcome Message -->
+            <div class="message assistant-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>🔥 What's up! Where do you want to go or what do you need to know?</p>
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="messageInput" 
+                    placeholder="Ask me about visas, internet speeds, costs, destinations..."
+                    maxlength="500"
+                >
+                <button id="sendButton" class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="quick-suggestions">
+                <button class="suggestion-btn" data-message="What's the internet speed in Lisbon?">
+                    💻 Internet in Lisbon
+                </button>
+                <button class="suggestion-btn" data-message="Tell me about digital nomad visas for Portugal">
+                    📋 Portugal Visa
+                </button>
+                <button class="suggestion-btn" data-message="Cost of living in Bali">
+                    💰 Bali Costs
+                </button>
+                <button class="suggestion-btn" data-message="Best coworking spaces in Mexico City">
+                    🏢 Mexico Coworking
+                </button>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div class="loading" id="loading" style="display: none;">
+            <div class="typing-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p>Getting the latest info...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,35 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment Variables
+.env
+.env.local
+.env.production
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Files  
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Demo Files (not needed for deployment)
+demo.py
+chatbot_demo.py
+
+# Git
+.git/ 

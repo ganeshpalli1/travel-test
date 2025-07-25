@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.local
+.DS_Store
+*.log
+demo.py
+chatbot_demo.py
+.git/
+.vscode/
+README.md 
